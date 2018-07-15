@@ -9,7 +9,7 @@ configure({adapter: new Adapter()});
 
 describe('<AddForm />', () => {
   it('renders correctly', () => {
-      const wrapper = render(<AddForm />);
+      const wrapper = shallow(<AddForm />);
       expect(wrapper).toMatchSnapshot();
   }); 
 });
